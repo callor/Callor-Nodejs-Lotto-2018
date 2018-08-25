@@ -88,10 +88,17 @@ module.exports = (app,lotto)=>{
             	    res.render('index', {
                     	body:'lotto',
                 	lotto: results,
+                	
+                	// view단에서 사용할 페이지 관련된 값들
                 	pageCount,
                 	itemCount,
+                	
+                	// active page 세팅을 위하여 선택된 페이지 번호를 보낸다
                 	currentPage:parseInt(req.query.page),
+                	
+                	// pagination을 구현하기 위한 배열 생성
                 	// .getArrayPages(limit, pageCount, currentPage)
+                	// 선택된 페이지를 중심으로 좌우로 limite 개수 만큼 페이지 번호 나열
                 	pages: paginate.getArrayPages(req)(10, pageCount, req.query.page)
                     })
             	})

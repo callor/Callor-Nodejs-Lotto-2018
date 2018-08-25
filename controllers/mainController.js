@@ -1,3 +1,11 @@
+/**
+ * 
+ * auth:callor@callor.com
+ * @since 2018-08-26
+ * @rem pagination 구현을 위한 예제
+ * 로또번호 엑셀파일을 mongoDB에 업로드 하고 페이지네이션으로 보여주기
+ * 
+ */
 // multer 초기화 작업
 var multer = require('multer')
 var path = require('path')

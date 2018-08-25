@@ -1,0 +1,29 @@
+article
+	table.w3-table.w3-border.w3-all.w3-striped
+		tr.w3-border
+			th(rowspan=2) 회차
+			th(rowspan=2) 추첨일
+			th(colspan=6).w3-center 당첨번호
+			th(rowspan=2) 보너스
+
+		tr.w3-border
+			th 1
+			th 2
+			th 3
+			th 4
+			th 5
+			th 6
+			
+		each item,index in lotto
+			tr.w3-border
+				td= item.회차
+				td= item.추첨일
+				td= item.NO1
+				td= item.NO2
+				td= item.NO3
+				td= item.NO4
+				td= item.NO5
+				td= item.NO6
+				td= item.보너스
+article.container.w3-margin
+	include ../include/pager.pug				

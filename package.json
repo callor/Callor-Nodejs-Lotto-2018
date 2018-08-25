@@ -1,0 +1,25 @@
+{
+  "name": "node-callor-lotto-statistics",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "date-utils": "^1.2.21",
+    "debug": "^2.6.9",
+    "express": "^4.16.3",
+    "express-paginate": "^1.0.0",
+    "express-session": "^1.15.6",
+    "http-errors": "^1.6.3",
+    "mongo-xlsx": "^1.0.12",
+    "mongojs": "^2.6.0",
+    "mongoose": "^5.2.8",
+    "morgan": "^1.9.0",
+    "multer": "^1.3.1",
+    "pug": "^2.0.3",
+    "serve-favicon": "^2.5.0"
+  }
+}

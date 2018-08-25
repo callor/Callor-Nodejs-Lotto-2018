@@ -1,0 +1,9 @@
+script(src='/socket.io/socket.io.js')
+script(src='/js/client.js')
+
+article
+	textarea#chatWindow(readonly,rows=10)
+	form#chat.w3-row
+		input#name.w3-input.w3-col.m1.w3-border(type='text', readonly, value= login.username)
+		input#message.w3-input.w3-col.m4.w3-border(type='text')
+		button(type='submit').w3-button.w3-blue.w3-col.m1 전송

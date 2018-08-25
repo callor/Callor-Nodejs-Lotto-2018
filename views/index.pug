@@ -1,0 +1,16 @@
+include include/head.pug
+
+body.container
+	include include/header.pug
+	
+	if !body
+		h2 반갑습니다
+		
+	else if body == 'file'
+		include body/fileup.pug
+		
+	else if body == 'excel'
+		include body/excel.pug
+		
+	else if body == 'lotto'
+		include body/lotto.pug		

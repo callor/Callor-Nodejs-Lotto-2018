@@ -1,0 +1,25 @@
+article
+	table.w3-table.w3-border
+		tr.w3-border
+			th 회차
+			th 추첨일
+			th 1
+			th 2
+			th 3
+			th 4
+			th 5
+			th 6
+			th 보너스
+			
+		each item,index in excel
+			tr.w3-border
+				td= item.회차
+				td= item.추첨일
+				td= item.NO1
+				td= item.NO2
+				td= item.NO3
+				td= item.NO4
+				td= item.NO5
+				td= item.NO6
+				td= item.보너스
+				

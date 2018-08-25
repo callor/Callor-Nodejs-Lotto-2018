@@ -1,0 +1,23 @@
+
+if paginate.hasPreviousPages || paginate.hasNextPages(pageCount)
+
+	ul.pagination.justify-content-center
+	
+		if paginate.hasPreviousPages
+			li.page-item
+				a(href=paginate.href(true)).page-link.prev 이전
+				
+		if pages
+			each page,index in pages
+				if currentPage == page.number
+					li.page-item.active
+						a(href=page.url).page-link= page.number
+				else
+					li.page-item
+						a(href=page.url).page-link= page.number
+
+					
+		if paginate.hasNextPages(pageCount)
+			li.page-item
+				a(href=paginate.href()).page-link.next 다음
+				

@@ -7,6 +7,7 @@ var mongojs = require('mongojs')
 var db = mongojs('master')
 
 // 페이지네이션을 처리하기 위한 middleware
+// https://github.com/expressjs/express-paginate
 var paginate = require('express-paginate');
 paginate.middleware(10, 50)
 
